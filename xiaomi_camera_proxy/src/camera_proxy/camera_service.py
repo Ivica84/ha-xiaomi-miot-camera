@@ -514,6 +514,7 @@ class CameraService:
 
     def _is_camera_device(self, device: MIoTDeviceInfo, extra_info) -> bool:
         """Check if device is a camera."""
+        _LOGGER.warning("CAMERA DEBUG: model=%s", device.model)
         # Check by model prefix
         if device.model.startswith(("chuangmi.camera", "isa.camera", "xiaomi.camera", "mxiang.camera")):
            return True
