@@ -1,5 +1,6 @@
+
 {
-    "name": "Xiaomi MIoT Camera Add-ons",
-"url": "https://github.com/Ivica84/ha-xiaomi-miot-camera"
-"maintainer": "Ricky Hao <14084342+Ricky-Hao@users.noreply.github.com>"
+  "name": "Xiaomi MIoT Camera TEST",
+  "url": "https://github.com/Ivica84/ha-xiaomi-miot-camera",
+  "maintainer": "Ivica84"
 }
