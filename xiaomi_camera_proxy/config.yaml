@@ -1,5 +1,5 @@
 name: Xiaomi Camera Proxy TEST
-version: "1.0.2"
+version: "1.0.3"
 slug: xiaomi_camera_proxy_test
 description: Camera streaming proxy for Xiaomi MIoT cameras with WebRTC support
 url: https://github.com/Ricky-Hao/ha-xiaomi-miot-camera
