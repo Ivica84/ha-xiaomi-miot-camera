@@ -59,7 +59,7 @@ class XiaomiMiotCameraConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
 
     def __init__(self) -> None:
         """Initialize the config flow."""
-        self._cloud_server: str = "cn"
+        self._cloud_server: str = CLOUD_SERVER
         self._oauth_info: dict | None = None
         self._cameras: dict = {}
         self._proxy_client: CameraProxyHttpClient | None = None
