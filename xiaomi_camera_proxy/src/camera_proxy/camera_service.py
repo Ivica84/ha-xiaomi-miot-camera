@@ -65,7 +65,7 @@ class CameraService:
         self._rtsp_streamer: Optional[RTSPStreamer] = None
 
         # State
-        self._cloud_server: str = "cn"
+        self._cloud_server: str = "de"
         self._oauth_info: Optional[MIoTOauthInfo] = None
         self._device_list: Dict[str, MIoTDeviceInfo] = {}
         self._camera_list: Dict[str, MIoTCameraInfo] = {}
@@ -446,7 +446,7 @@ class CameraService:
             async with aiofiles.open(TOKENS_FILE, "r") as f:
                 data = json.loads(await f.read())
             
-            self._cloud_server = data.get("cloud_server", "cn")
+            self._cloud_server = data.get("cloud_server", "de")
             if "oauth_info" in data:
                 oauth_info = MIoTOauthInfo(**data["oauth_info"])
                 
