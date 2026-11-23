@@ -516,8 +516,7 @@ class CameraService:
         """Check if device is a camera."""
         # Check by model prefix
         if device.model.startswith(("chuangmi.camera", "isa.camera", "xiaomi.camera", "mxiang.camera")):
-            denylist = extra_info.denylist.get("camera", {})
-            return device.model not in denylist
+           return True
         
         # Check allowlist for other device types (wifispeaker with camera)
         for cls_name, models in extra_info.allowlist.items():
