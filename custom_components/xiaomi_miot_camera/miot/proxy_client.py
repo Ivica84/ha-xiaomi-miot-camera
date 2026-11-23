@@ -38,7 +38,7 @@ class CameraProxyHttpClient:
     def __init__(
         self,
         proxy_url: str = DEFAULT_PROXY_URL,
-        timeout: int = 30,
+        timeout: int = 120,
     ):
         """Initialize the proxy client."""
         self._proxy_url = proxy_url.rstrip("/")
